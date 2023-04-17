@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d60c1d142a9ddea17fb17bb141e8878f {
+                    position: relative;
+                    width: 600.0px;
+                    height: 600.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d60c1d142a9ddea17fb17bb141e8878f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d60c1d142a9ddea17fb17bb141e8878f = L.map(
+                "map_d60c1d142a9ddea17fb17bb141e8878f",
+                {
+                    center: [47.5569312736912, 8.899311044578134],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_d60c1d142a9ddea17fb17bb141e8878f);
+
+            
+
+        
+    
+            var tile_layer_de95f7ab0cdcdf37cb6c2269e99f6add = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 16, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d60c1d142a9ddea17fb17bb141e8878f);
+        
+    
+            var marker_cluster_74c1bb94c993873c099c97d3427af99e = L.markerClusterGroup(
+                {}
+            );
+            map_d60c1d142a9ddea17fb17bb141e8878f.addLayer(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var marker_10e4310fddb569fd5a44bf4d7a7826ef = L.marker(
+                [47.555182895300625, 8.89686904319842],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_baf4d273461f77437095469e6579fc49 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "white"}
+            )
+            marker_10e4310fddb569fd5a44bf4d7a7826ef.setIcon(beautify_icon_baf4d273461f77437095469e6579fc49);
+        
+    
+        var popup_cb67e71e963838015d310cb3243cb45d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7e52b09fb93cb4d83d994478ac8c144 = $(`<div id="html_f7e52b09fb93cb4d83d994478ac8c144" style="width: 100.0%; height: 100.0%;">Turm erbaut um 1227. Erweiterungen bis 16. Jahrhundert , Südflügel 1833. Turm von den Kyburgern erbaut , ab 1264 habsburgischer Verwaltungssitz. Nach 1373 Hug von Hohenlandenberg. Sitz der Eidgenössischen Landvögte von 1534 bis 1798. Übergang an Kanton Thurgau 1803. 1867 Verkauf an J.J. Bachmann . Legat Marie Bachmann an Kanton Thurgau 1955 , Restaurierung . Seit 1960 ist im Schloss Frauenfeld das Historische Museum Thurgau beheimatet. Die Dauerausstellung thematisiert vor allem die Geschichte der Landgrafschaft und Gemeinen Herrschaft Thurgau und bietet Gelegenheit zur Begegnung mit Objekten und Dokumenten aus 800 Jahren Thurgauer Geschichte.</div>`)[0];
+                popup_cb67e71e963838015d310cb3243cb45d.setContent(html_f7e52b09fb93cb4d83d994478ac8c144);
+            
+        
+
+        marker_10e4310fddb569fd5a44bf4d7a7826ef.bindPopup(popup_cb67e71e963838015d310cb3243cb45d)
+        ;
+
+        
+    
+    
+            marker_10e4310fddb569fd5a44bf4d7a7826ef.bindTooltip(
+                `<div>
+                     Schloss Fraunefeld
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b27ac97b663cf19162470ab300d527f7 = L.marker(
+                [47.555691673562684, 8.896037318229144],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_d4926ee797fb8f4dea845e25a928609c = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "white"}
+            )
+            marker_b27ac97b663cf19162470ab300d527f7.setIcon(beautify_icon_d4926ee797fb8f4dea845e25a928609c);
+        
+    
+        var popup_199c6acddc2ce68d39a392c0a9bccd5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b0d8809e017b7607ae7809697ba8a04 = $(`<div id="html_8b0d8809e017b7607ae7809697ba8a04" style="width: 100.0%; height: 100.0%;">Erbaut 1897/98 von der Direktion der eidgenössischen Bauten nach Plänen von Theodor Gohl. Erweiterungsbau und Umbauten 1941 bis 1944 von Albert Rimli. Bau des Telefongebäudes 1955 von Jean Kräher. 1982 bis 1986 Renovation Altbau und Neubau von Jan Gundlach. 2016 Abbruch des Gundlach- Baus , 2016-2018 Renovation Altbau und Bau des neuen Postgebäudes.</div>`)[0];
+                popup_199c6acddc2ce68d39a392c0a9bccd5e.setContent(html_8b0d8809e017b7607ae7809697ba8a04);
+            
+        
+
+        marker_b27ac97b663cf19162470ab300d527f7.bindPopup(popup_199c6acddc2ce68d39a392c0a9bccd5e)
+        ;
+
+        
+    
+    
+            marker_b27ac97b663cf19162470ab300d527f7.bindTooltip(
+                `<div>
+                     Postgebäude
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48d2e398e5af4f9d678d9a6514a05021 = L.marker(
+                [47.55536345769083, 8.89744569044334],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_1bd8acd0ca9b6ff0846e079bebd99d48 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "white"}
+            )
+            marker_48d2e398e5af4f9d678d9a6514a05021.setIcon(beautify_icon_1bd8acd0ca9b6ff0846e079bebd99d48);
+        
+    
+        var popup_a0378762a449871c750475b03d065a9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70473b81c080909eea962d47883c80a9 = $(`<div id="html_70473b81c080909eea962d47883c80a9" style="width: 100.0%; height: 100.0%;">Erbaut 1790 bis 1794. Bis 1798 Tagungsort der Eidgenössischen Tagsatzung Früheres Rathaus von 1512/13 am Standort des Sämannsbrunnens, 1788 zerstört durch den zweiten Stadtbrand. Heutiger Bau von Josef Purtscher aus Pfaffnau, Luzern Saal 1796 ausgemalt, 1900 vergrössert. Hintergebäude mit Rathausturm 1905/6 angefügt. Restaurierung 1979 bis 1983. Das Rathaus ist Eigentum der Bürgergemeinde Frauenfeld.</div>`)[0];
+                popup_a0378762a449871c750475b03d065a9e.setContent(html_70473b81c080909eea962d47883c80a9);
+            
+        
+
+        marker_48d2e398e5af4f9d678d9a6514a05021.bindPopup(popup_a0378762a449871c750475b03d065a9e)
+        ;
+
+        
+    
+    
+            marker_48d2e398e5af4f9d678d9a6514a05021.bindTooltip(
+                `<div>
+                     Rathaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5052096c58d8e420c531f65991c0ebe = L.marker(
+                [47.5552459525249, 8.897698161467549],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_3d6619159e7efc91575e2dd50131ab3b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "white"}
+            )
+            marker_d5052096c58d8e420c531f65991c0ebe.setIcon(beautify_icon_3d6619159e7efc91575e2dd50131ab3b);
+        
+    
+        var popup_e81f57d456b5c2cdc165454cc31efe22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44159fe29803d1f8c4598459c9c48181 = $(`<div id="html_44159fe29803d1f8c4598459c9c48181" style="width: 100.0%; height: 100.0%;">Erbaut um 1555. Ehemaliger Gasthof. Vorder- und Hinterhaus durch geräumigen Lichthof getrennt. Räume von 1600 bis 1665 ausgemalt. 1725 Umbau und Anbau des Aussenturms an der Murgseite. Restaurierung 1979 bis 1982.</div>`)[0];
+                popup_e81f57d456b5c2cdc165454cc31efe22.setContent(html_44159fe29803d1f8c4598459c9c48181);
+            
+        
+
+        marker_d5052096c58d8e420c531f65991c0ebe.bindPopup(popup_e81f57d456b5c2cdc165454cc31efe22)
+        ;
+
+        
+    
+    
+            marker_d5052096c58d8e420c531f65991c0ebe.bindTooltip(
+                `<div>
+                     Alte Sonne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff5ffaf89fd4682eb63086c35e7eafeb = L.marker(
+                [47.55524216557984, 8.897953419274398],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_3b200f2c5692104b0ec87f04a22649fb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "white"}
+            )
+            marker_ff5ffaf89fd4682eb63086c35e7eafeb.setIcon(beautify_icon_3b200f2c5692104b0ec87f04a22649fb);
+        
+    
+        var popup_ed770c36467dddf2d36ef641d75af3d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df4c9a3fed8667c3bf68904db206613f = $(`<div id="html_df4c9a3fed8667c3bf68904db206613f" style="width: 100.0%; height: 100.0%;">Erbaut 1555. Ab 1565 Wohnsitz von L. Wüest, «Deutscher Schulmeister», 1612 bis 1627 von Goldschmied E. Wüest. Restauriert 1979 bis 1982. Barocke Fassadenmalerei nach Befund rekonstruiert. Fresko «Stadtwächter von J. Schedler nach Motiv in der alten Sonne.</div>`)[0];
+                popup_ed770c36467dddf2d36ef641d75af3d7.setContent(html_df4c9a3fed8667c3bf68904db206613f);
+            
+        
+
+        marker_ff5ffaf89fd4682eb63086c35e7eafeb.bindPopup(popup_ed770c36467dddf2d36ef641d75af3d7)
+        ;
+
+        
+    
+    
+            marker_ff5ffaf89fd4682eb63086c35e7eafeb.bindTooltip(
+                `<div>
+                     Gambrinus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64eb53f05e232a79034187f4aeca6d4a = L.marker(
+                [47.55557155782734, 8.897849635635705],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_ffa66ec8682cfbe1a50388301a27a5ca = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "white"}
+            )
+            marker_64eb53f05e232a79034187f4aeca6d4a.setIcon(beautify_icon_ffa66ec8682cfbe1a50388301a27a5ca);
+        
+    
+        var popup_52918b8f19c2e7fa0741d1758141d272 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_139149c315d3a3e934648648e0f1df3c = $(`<div id="html_139149c315d3a3e934648648e0f1df3c" style="width: 100.0%; height: 100.0%;">Erbaut 1598. Früheres Haus zusammengebaut mit dem Spiegelhof. Im Besitz der Familie Hofmeister, 1489 Familie Muntprat, 1546 bis 1590 Familie von Landenberg. Neubau durch Hans Kaspar Müller 1598. Fassade mit gotischen Staffel- und Kuppelfenstern . Restaurierungen 1970 und 2011.</div>`)[0];
+                popup_52918b8f19c2e7fa0741d1758141d272.setContent(html_139149c315d3a3e934648648e0f1df3c);
+            
+        
+
+        marker_64eb53f05e232a79034187f4aeca6d4a.bindPopup(popup_52918b8f19c2e7fa0741d1758141d272)
+        ;
+
+        
+    
+    
+            marker_64eb53f05e232a79034187f4aeca6d4a.bindTooltip(
+                `<div>
+                     Haus zum Licht
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e56a4db703f99cef2c3abeef583570c = L.marker(
+                [47.555707858371946, 8.897681333326721],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_16a7cdd0e943413fa71e37c8d5bc9c54 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 8, "textColor": "white"}
+            )
+            marker_1e56a4db703f99cef2c3abeef583570c.setIcon(beautify_icon_16a7cdd0e943413fa71e37c8d5bc9c54);
+        
+    
+        var popup_291bef7b7d41e78a43fb3a5f82d903b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a510a34601c863f3c34be3deaddeeb8b = $(`<div id="html_a510a34601c863f3c34be3deaddeeb8b" style="width: 100.0%; height: 100.0%;">Erbaut 1788 nach dem zweiten Stadtbrand. Reformierte Mädchenschule bis 1831, dann Primarschule, 1863 bis 1976 Apotheke Schilt. Bis 1920 Wohnhaus von Bildhauer Otto Schilt.</div>`)[0];
+                popup_291bef7b7d41e78a43fb3a5f82d903b3.setContent(html_a510a34601c863f3c34be3deaddeeb8b);
+            
+        
+
+        marker_1e56a4db703f99cef2c3abeef583570c.bindPopup(popup_291bef7b7d41e78a43fb3a5f82d903b3)
+        ;
+
+        
+    
+    
+            marker_1e56a4db703f99cef2c3abeef583570c.bindTooltip(
+                `<div>
+                     Mädchenschule
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_025ca06bcaeb4f0d3d4fd37c11b5a767 = L.marker(
+                [47.55569649803539, 8.898183438355648],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_167ece8ed7db9775858ba8940c470562 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 9, "textColor": "white"}
+            )
+            marker_025ca06bcaeb4f0d3d4fd37c11b5a767.setIcon(beautify_icon_167ece8ed7db9775858ba8940c470562);
+        
+    
+        var popup_ec64d2ad7d2738da047ba5f5383ff870 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33c848973e28f8c1b1b69418ee97c3bd = $(`<div id="html_33c848973e28f8c1b1b69418ee97c3bd" style="width: 100.0%; height: 100.0%;">16. Jahrhundert Gasthof. 1615 Besitz von Kaspar Müller, Neubau 1630-1632 Vorder- und Hinterhaus. Durch Lichthof geschieden. Zur Reformationszeit bis 1712 Hauptquartier der Zürcher. Von 1720 bis 1790 Absteigequartier der Zürcherischen Tagsatzungsgesandten. 1912 Umgestaltung der Fassade.</div>`)[0];
+                popup_ec64d2ad7d2738da047ba5f5383ff870.setContent(html_33c848973e28f8c1b1b69418ee97c3bd);
+            
+        
+
+        marker_025ca06bcaeb4f0d3d4fd37c11b5a767.bindPopup(popup_ec64d2ad7d2738da047ba5f5383ff870)
+        ;
+
+        
+    
+    
+            marker_025ca06bcaeb4f0d3d4fd37c11b5a767.bindTooltip(
+                `<div>
+                     Haus zum Schwert
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26543998203b0ada21739b136a41375e = L.marker(
+                [47.55601302962562, 8.898177446936389],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_c545a146d200f4f9d034edc820c082e0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 11, "textColor": "white"}
+            )
+            marker_26543998203b0ada21739b136a41375e.setIcon(beautify_icon_c545a146d200f4f9d034edc820c082e0);
+        
+    
+            marker_26543998203b0ada21739b136a41375e.bindTooltip(
+                `<div>
+                     Evangelische Stadtkirche
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12164ac1776bf2f05b2cf5b8882cc787 = L.marker(
+                [47.55642273961332, 8.898585236240681],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_80a7cd093c06e42163578cc4f466a9b6 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 13, "textColor": "white"}
+            )
+            marker_12164ac1776bf2f05b2cf5b8882cc787.setIcon(beautify_icon_80a7cd093c06e42163578cc4f466a9b6);
+        
+    
+            marker_12164ac1776bf2f05b2cf5b8882cc787.bindTooltip(
+                `<div>
+                     Luzernerhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64f9d88f71fda0121e1231a6c8666935 = L.marker(
+                [47.55671352973257, 8.898777267836074],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_8a5bb61a40cebc01742f0677dc0d2d73 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 14, "textColor": "white"}
+            )
+            marker_64f9d88f71fda0121e1231a6c8666935.setIcon(beautify_icon_8a5bb61a40cebc01742f0677dc0d2d73);
+        
+    
+            marker_64f9d88f71fda0121e1231a6c8666935.bindTooltip(
+                `<div>
+                     Gachnager Stock
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc11567f51a92a48a0caf13c89046338 = L.marker(
+                [47.556858923269154, 8.898824098790193],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_6eb2c41628e42ee8374125cace45bf8a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 15, "textColor": "white"}
+            )
+            marker_fc11567f51a92a48a0caf13c89046338.setIcon(beautify_icon_6eb2c41628e42ee8374125cace45bf8a);
+        
+    
+            marker_fc11567f51a92a48a0caf13c89046338.bindTooltip(
+                `<div>
+                     Bernerhaus Zur Gedult
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64675f1fcf58c504097c6167a68b8b81 = L.marker(
+                [47.556990095580275, 8.89862270576619],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_660ffd3bcfa18c05d0d15ca21cf2e624 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 16, "textColor": "white"}
+            )
+            marker_64675f1fcf58c504097c6167a68b8b81.setIcon(beautify_icon_660ffd3bcfa18c05d0d15ca21cf2e624);
+        
+    
+            marker_64675f1fcf58c504097c6167a68b8b81.bindTooltip(
+                `<div>
+                     Palme
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6abad40e621116b30b451055b522feba = L.marker(
+                [47.557073856229756, 8.898418969707945],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_9f6e2af7fdfb1ae0a25e285e072655eb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 17, "textColor": "white"}
+            )
+            marker_6abad40e621116b30b451055b522feba.setIcon(beautify_icon_9f6e2af7fdfb1ae0a25e285e072655eb);
+        
+    
+            marker_6abad40e621116b30b451055b522feba.bindTooltip(
+                `<div>
+                     Krone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a5d6fb74f81d669dd54223ea30d40b3 = L.marker(
+                [47.55688895036011, 8.898137953527275],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_61b8a21e883da2451f67687b7cf40f42 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 18, "textColor": "white"}
+            )
+            marker_4a5d6fb74f81d669dd54223ea30d40b3.setIcon(beautify_icon_61b8a21e883da2451f67687b7cf40f42);
+        
+    
+            marker_4a5d6fb74f81d669dd54223ea30d40b3.bindTooltip(
+                `<div>
+                     Redingshaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3b976bc9fd4920ce1b9958362e5eaad = L.marker(
+                [47.557114942993735, 8.898044281132812],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_a1d6b9f0e240f1a6e874771e7c5e8f32 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 20, "textColor": "white"}
+            )
+            marker_b3b976bc9fd4920ce1b9958362e5eaad.setIcon(beautify_icon_a1d6b9f0e240f1a6e874771e7c5e8f32);
+        
+    
+            marker_b3b976bc9fd4920ce1b9958362e5eaad.bindTooltip(
+                `<div>
+                     Stadtkirche ST.Nikolaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29866adc5d9b69609f4ee1b577f2a206 = L.marker(
+                [47.55695532494169, 8.897810103570238],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_0508e4d7c75a2cd14016401e27319f46 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 21, "textColor": "white"}
+            )
+            marker_29866adc5d9b69609f4ee1b577f2a206.setIcon(beautify_icon_0508e4d7c75a2cd14016401e27319f46);
+        
+    
+            marker_29866adc5d9b69609f4ee1b577f2a206.bindTooltip(
+                `<div>
+                     Ehemaliges Gasthaus zum Hirschen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cc3815131aaa0342e3f04bd292e5f73 = L.marker(
+                [47.55680360888261, 8.897681307259596],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_0e7bbad9bca359ff74f882e02b75ceac = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 22, "textColor": "white"}
+            )
+            marker_0cc3815131aaa0342e3f04bd292e5f73.setIcon(beautify_icon_0e7bbad9bca359ff74f882e02b75ceac);
+        
+    
+            marker_0cc3815131aaa0342e3f04bd292e5f73.bindTooltip(
+                `<div>
+                     Zürcherhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2eff9c71427c9460f0aff3d1fedd91d0 = L.marker(
+                [47.55668191997063, 8.897597004888498],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_961ce7d75ea7338947c00e5fda2ca0d7 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 23, "textColor": "white"}
+            )
+            marker_2eff9c71427c9460f0aff3d1fedd91d0.setIcon(beautify_icon_961ce7d75ea7338947c00e5fda2ca0d7);
+        
+    
+            marker_2eff9c71427c9460f0aff3d1fedd91d0.bindTooltip(
+                `<div>
+                     Rüpplinsche Kaplanei
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c299212e38c7fc13382c76996058294f = L.marker(
+                [47.55632949792575, 8.897121623271252],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_3a8e131a35bab78623cd9a1463f3a674 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 24, "textColor": "white"}
+            )
+            marker_c299212e38c7fc13382c76996058294f.setIcon(beautify_icon_3a8e131a35bab78623cd9a1463f3a674);
+        
+    
+            marker_c299212e38c7fc13382c76996058294f.bindTooltip(
+                `<div>
+                     Goldener Adler
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_641a75d28c26928d18fc2a898d8fab53 = L.marker(
+                [47.554652546303046, 8.894192076826629],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_1f60e0a8b985e38baf56e04c41b6a6ca = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 27, "textColor": "white"}
+            )
+            marker_641a75d28c26928d18fc2a898d8fab53.setIcon(beautify_icon_1f60e0a8b985e38baf56e04c41b6a6ca);
+        
+    
+            marker_641a75d28c26928d18fc2a898d8fab53.bindTooltip(
+                `<div>
+                     Baliere
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0d9916a7af0648f377fde4f6cac7059 = L.marker(
+                [47.559411213972076, 8.900393588240373],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_273c09c9c537f01d2baa7fa6fd8a3fa2 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 28, "textColor": "white"}
+            )
+            marker_c0d9916a7af0648f377fde4f6cac7059.setIcon(beautify_icon_273c09c9c537f01d2baa7fa6fd8a3fa2);
+        
+    
+            marker_c0d9916a7af0648f377fde4f6cac7059.bindTooltip(
+                `<div>
+                     Staatsarchiv und altes Zeughaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3f5eaa3b899ca013b7cb25c385b43d0 = L.marker(
+                [47.555821610968025, 8.899085630790852],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_192a70b15a0a2cf2a5075eca694830bd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 29, "textColor": "white"}
+            )
+            marker_b3f5eaa3b899ca013b7cb25c385b43d0.setIcon(beautify_icon_192a70b15a0a2cf2a5075eca694830bd);
+        
+    
+            marker_b3f5eaa3b899ca013b7cb25c385b43d0.bindTooltip(
+                `<div>
+                     Verwaltungsgebäude
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea842cc35c15bc4f6fc53d603d124b6f = L.marker(
+                [47.55626342672545, 8.899378614821604],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_8051945990ef0ea6ffe20b0ae0e09508 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 30, "textColor": "white"}
+            )
+            marker_ea842cc35c15bc4f6fc53d603d124b6f.setIcon(beautify_icon_8051945990ef0ea6ffe20b0ae0e09508);
+        
+    
+            marker_ea842cc35c15bc4f6fc53d603d124b6f.bindTooltip(
+                `<div>
+                     Kantonsbibliothek ehem. Obergericht
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f1dbe500f4a54bffbf24e5afc49030a = L.marker(
+                [47.55574964851144, 8.900327606791075],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_0a69edbe740fc7ce8cbd5974cf94280f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 31, "textColor": "white"}
+            )
+            marker_3f1dbe500f4a54bffbf24e5afc49030a.setIcon(beautify_icon_0a69edbe740fc7ce8cbd5974cf94280f);
+        
+    
+            marker_3f1dbe500f4a54bffbf24e5afc49030a.bindTooltip(
+                `<div>
+                     Obergericht und Botanischer Garten
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b67b594affb17c2fdea2095b180885c = L.marker(
+                [47.55678118282389, 8.899581303744219],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_3136bf5dcdca91505a997c6e200026bd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 32, "textColor": "white"}
+            )
+            marker_7b67b594affb17c2fdea2095b180885c.setIcon(beautify_icon_3136bf5dcdca91505a997c6e200026bd);
+        
+    
+            marker_7b67b594affb17c2fdea2095b180885c.bindTooltip(
+                `<div>
+                     ehemals Thurgauerzeitung"
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_833aee642a0461c9ab929b2f402e6dd4 = L.marker(
+                [47.557267788653185, 8.899474177302434],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_989f70289dd04710c07dbd5655a67333 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 33, "textColor": "white"}
+            )
+            marker_833aee642a0461c9ab929b2f402e6dd4.setIcon(beautify_icon_989f70289dd04710c07dbd5655a67333);
+        
+    
+            marker_833aee642a0461c9ab929b2f402e6dd4.bindTooltip(
+                `<div>
+                     Regierungsgebäude
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c165d749237a5fe9a5645626e9a043fe = L.marker(
+                [47.560025498612085, 8.903493538964463],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_908d07da0c24597b6fee8946c2c8a22d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 34, "textColor": "white"}
+            )
+            marker_c165d749237a5fe9a5645626e9a043fe.setIcon(beautify_icon_908d07da0c24597b6fee8946c2c8a22d);
+        
+    
+            marker_c165d749237a5fe9a5645626e9a043fe.bindTooltip(
+                `<div>
+                     Guggenhürli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8445acdd3ee66a1e01ea2a803cd9659c = L.marker(
+                [47.55522798439374, 8.902943933362277],
+                {}
+            ).addTo(marker_cluster_74c1bb94c993873c099c97d3427af99e);
+        
+    
+            var beautify_icon_8402e56466b7504a25fbc11f84a28845 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 35, "textColor": "white"}
+            )
+            marker_8445acdd3ee66a1e01ea2a803cd9659c.setIcon(beautify_icon_8402e56466b7504a25fbc11f84a28845);
+        
+    
+            marker_8445acdd3ee66a1e01ea2a803cd9659c.bindTooltip(
+                `<div>
+                     Hauptgebäude Kantonsschule Frauenfeld
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cluster_48f691fb249b5c3c1b09116c62c88227 = L.markerClusterGroup(
+                {}
+            );
+            map_d60c1d142a9ddea17fb17bb141e8878f.addLayer(marker_cluster_48f691fb249b5c3c1b09116c62c88227);
+        
+    
+            var marker_70e68af8465b17160f7a4cb757f8eba8 = L.marker(
+                [47.55560838261569, 8.897213319680613],
+                {}
+            ).addTo(marker_cluster_48f691fb249b5c3c1b09116c62c88227);
+        
+    
+            var beautify_icon_c28ad173ba85516096c4f37acd25f2bd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "blue", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "white"}
+            )
+            marker_70e68af8465b17160f7a4cb757f8eba8.setIcon(beautify_icon_c28ad173ba85516096c4f37acd25f2bd);
+        
+    
+        var popup_f427ef3590f8750e2cba000dc42ccedb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f983c1bd34a42fa3e6b4ee0c48c300a4 = $(`<div id="html_f983c1bd34a42fa3e6b4ee0c48c300a4" style="width: 100.0%; height: 100.0%;">1930/31 von Bildhauer Otto Schilt entworfen und ausgeführt . Der Brunnentrog mit einem Durchmesser von 4.4m besteht aus zwölf Platten aus Mägenwiler Muschelkalk mit Basreliefs der Tierkreisfiguren . Ein geschmiedetes Eisenband mit 24 Ro setten hält die Platten . In der Brun nenmitte ein 2m hoher Sockel aus dem selben Muschelkalk mit 8 Was serschlitzen , darauf der 2.15 m grosse aus Bronze gegossene Sämann . Beil der Einweihung im Dezember 1931 wurde der Brunnen noch nach dem Frauenfelder Kaufmann Asmund Kappeler benannt, der die Erstellung mit einem Legat ermöglichte . Der Frauenfelder Otto Schilt ( 1888 1943 ) wuchs an der Freiestrasse 5 ( Bild 8 ) auf, besuchte die Kantonsschule und schloss sein Studium der Jurisprudenz in Leipzig mit dem Doktorat ab. Während er bei der Berufswahl eher dem Wunsch des Vaters folgte , galt seine Liebe schon früh der Bildhauerei. Sein Schaffen blieb einem strengen Naturalismus verpflichtet, wie z.B. auch beim Frauenfelder Soldatendenkmal ( 1921 ) oder dem Pfadfinder bei der Kantonsschule.</div>`)[0];
+                popup_f427ef3590f8750e2cba000dc42ccedb.setContent(html_f983c1bd34a42fa3e6b4ee0c48c300a4);
+            
+        
+
+        marker_70e68af8465b17160f7a4cb757f8eba8.bindPopup(popup_f427ef3590f8750e2cba000dc42ccedb)
+        ;
+
+        
+    
+    
+            marker_70e68af8465b17160f7a4cb757f8eba8.bindTooltip(
+                `<div>
+                     Sämannsbrunnen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bd13ec1966afbbcb421ba378c3670ba = L.marker(
+                [47.55587244664283, 8.898024477720769],
+                {}
+            ).addTo(marker_cluster_48f691fb249b5c3c1b09116c62c88227);
+        
+    
+            var beautify_icon_585f9e8a6e454c722e71d151df45c3ed = new L.BeautifyIcon.icon(
+                {"backgroundColor": "blue", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 10, "textColor": "white"}
+            )
+            marker_3bd13ec1966afbbcb421ba378c3670ba.setIcon(beautify_icon_585f9e8a6e454c722e71d151df45c3ed);
+        
+    
+        var popup_dc68b5c9865af54c22c4415be9a9f6ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8acfd92dda45c8d4a1edd691e1cccb6e = $(`<div id="html_8acfd92dda45c8d4a1edd691e1cccb6e" style="width: 100.0%; height: 100.0%;">Rechteckiger, zirka 60 cm tiefer, zum Achteck (3.12 auf 2.15 m) ab geschrägter Trog aus Solothurner Muschelkalk. An der Breitseite stand 1860 noch ein Sudeltrog. Flickstellen für den früheren Rost zeigen, dass der Brunnenstock mit der Bronzeröhre an der linken Schmalseite stand. Er ist wie der Trog aus einem einzigen Stein gehauen und 2.5m hoch. Der Brunnen diente auch einer Küferei am Platz. Hier wurden Wein und Mostfässer gespült. Der dabei entstehende Geruch gab wohl dem Platz den Namen.</div>`)[0];
+                popup_dc68b5c9865af54c22c4415be9a9f6ec.setContent(html_8acfd92dda45c8d4a1edd691e1cccb6e);
+            
+        
+
+        marker_3bd13ec1966afbbcb421ba378c3670ba.bindPopup(popup_dc68b5c9865af54c22c4415be9a9f6ec)
+        ;
+
+        
+    
+    
+            marker_3bd13ec1966afbbcb421ba378c3670ba.bindTooltip(
+                `<div>
+                     Brunnen zum Sauren Winkel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be1cd6176f722bfa5f9c1322e5c65557 = L.marker(
+                [47.55627734622366, 8.89821523623891],
+                {}
+            ).addTo(marker_cluster_48f691fb249b5c3c1b09116c62c88227);
+        
+    
+            var beautify_icon_6a9d75f0721fcbecc53ae52fd8406549 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "blue", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 12, "textColor": "white"}
+            )
+            marker_be1cd6176f722bfa5f9c1322e5c65557.setIcon(beautify_icon_6a9d75f0721fcbecc53ae52fd8406549);
+        
+    
+            marker_be1cd6176f722bfa5f9c1322e5c65557.bindTooltip(
+                `<div>
+                     Brunnen an der Freiestrasse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_869943650eb7bee66696ae88ab00ca65 = L.marker(
+                [47.55697112963478, 8.898222257484244],
+                {}
+            ).addTo(marker_cluster_48f691fb249b5c3c1b09116c62c88227);
+        
+    
+            var beautify_icon_d826d16a7b7bcb42a6c644d3cab189af = new L.BeautifyIcon.icon(
+                {"backgroundColor": "blue", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 19, "textColor": "white"}
+            )
+            marker_869943650eb7bee66696ae88ab00ca65.setIcon(beautify_icon_d826d16a7b7bcb42a6c644d3cab189af);
+        
+    
+            marker_869943650eb7bee66696ae88ab00ca65.bindTooltip(
+                `<div>
+                     Brunnen beim Redinghaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98d3c96b094d3179f7daf76f32bcd8b6 = L.marker(
+                [47.556198326609945, 8.897456498013398],
+                {}
+            ).addTo(marker_cluster_48f691fb249b5c3c1b09116c62c88227);
+        
+    
+            var beautify_icon_fbc20031a9183afdae2860bfd3b489c0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "blue", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 25, "textColor": "white"}
+            )
+            marker_98d3c96b094d3179f7daf76f32bcd8b6.setIcon(beautify_icon_fbc20031a9183afdae2860bfd3b489c0);
+        
+    
+            marker_98d3c96b094d3179f7daf76f32bcd8b6.bindTooltip(
+                `<div>
+                     Meitlibrunnen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c011af9aca3bc375d61f737d5531025 = L.marker(
+                [47.5556278033407, 8.898653144553851],
+                {}
+            ).addTo(marker_cluster_48f691fb249b5c3c1b09116c62c88227);
+        
+    
+            var beautify_icon_603608d99e217ff51f42c56bdc3c322a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "blue", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 26, "textColor": "white"}
+            )
+            marker_3c011af9aca3bc375d61f737d5531025.setIcon(beautify_icon_603608d99e217ff51f42c56bdc3c322a);
+        
+    
+            marker_3c011af9aca3bc375d61f737d5531025.bindTooltip(
+                `<div>
+                     Brunnen an der Promenade
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cluster_b2d93388919028e4a85eb0fa3e36a918 = L.markerClusterGroup(
+                {}
+            );
+            map_d60c1d142a9ddea17fb17bb141e8878f.addLayer(marker_cluster_b2d93388919028e4a85eb0fa3e36a918);
+        
+    
+            var marker_6e4286117e93e04db6aee371351afc1c = L.marker(
+                [47.55657877855989, 8.897794404069595],
+                {}
+            ).addTo(marker_cluster_b2d93388919028e4a85eb0fa3e36a918);
+        
+    
+            var beautify_icon_71c08cb97fd057fe23ea508c8db4f6c5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "red", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 36, "textColor": "white"}
+            )
+            marker_6e4286117e93e04db6aee371351afc1c.setIcon(beautify_icon_71c08cb97fd057fe23ea508c8db4f6c5);
+        
+    
+            marker_6e4286117e93e04db6aee371351afc1c.bindTooltip(
+                `<div>
+                     Brandherd Stadtbrand 1771
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df63d59b6a153c177cba6b7147d883ce = L.marker(
+                [47.55590310041729, 8.896990037509006],
+                {}
+            ).addTo(marker_cluster_b2d93388919028e4a85eb0fa3e36a918);
+        
+    
+            var beautify_icon_3aac875400818c738be7954e4b338cb2 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "red", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "font-size: 12px;", "isAlphaNumericIcon": true, "spin": false, "text": 37, "textColor": "white"}
+            )
+            marker_df63d59b6a153c177cba6b7147d883ce.setIcon(beautify_icon_3aac875400818c738be7954e4b338cb2);
+        
+    
+            marker_df63d59b6a153c177cba6b7147d883ce.bindTooltip(
+                `<div>
+                     Brandherd Stadtbrand 1788
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_0ad1eff175a3f91d09c8aed984caa818 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_de95f7ab0cdcdf37cb6c2269e99f6add,
+                },
+                overlays :  {
+                    "Geb\u00e4ude" : marker_cluster_74c1bb94c993873c099c97d3427af99e,
+                    "Brunnen" : marker_cluster_48f691fb249b5c3c1b09116c62c88227,
+                    "Brand" : marker_cluster_b2d93388919028e4a85eb0fa3e36a918,
+                },
+            };
+            L.control.layers(
+                layer_control_0ad1eff175a3f91d09c8aed984caa818.base_layers,
+                layer_control_0ad1eff175a3f91d09c8aed984caa818.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d60c1d142a9ddea17fb17bb141e8878f);
+        
+</script>
+</html>
