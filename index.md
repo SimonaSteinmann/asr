@@ -15,7 +15,7 @@ Die Karte [als eigene Seite](karte_asr.html).
 7. [Haus zum Licht](#haus-zum-licht)
 8. [Mädchenschule](#mädchenschule)
 9. [Haus zum Schwert](#haus-zum-schwert)
-10. [Brunnen im Sauren Winkel] (#brunnen-im-sauren-winkel) 
+10. [Brunnen im Sauren Winkel](#brunnen-im-sauren-winkel) 
 
 
 ## Schloss Frauenfeld
